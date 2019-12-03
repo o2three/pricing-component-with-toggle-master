@@ -196,7 +196,7 @@ footer a.footer {
     margin: auto; }
   .container {
     display: grid;
-    grid-template-columns: repeat(1, 300px);
+    grid-template-columns: repeat(1, 350px);
     grid-gap: 1rem;
     align-items: center;
     justify-content: center;
