@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  background: #f6f6fe; }
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.65rem; }
+
+ul {
+  list-style: none; }
+
+li {
+  padding: 1rem;
+  margin: auto;
+  width: 80%; }
+
+.heading {
+  width: 1000px;
+  text-align: center;
+  margin: auto;
+  padding: 2rem 1rem 1rem 1rem;
+  color: #6d708d; }
+
+h1 {
+  padding: 2rem; }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 30px;
+  background-color: rgba(130, 125, 214, 0.7);
+  border-radius: 20px;
+  transition: all 0.3s; }
+
+.switch::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  top: 2px;
+  left: 2px;
+  transition: all 0.3s;
+  cursor: pointer; }
+
+.checkbox:checked + .switch::after {
+  left: 28px; }
+
+.checkbox:checked + .switch {
+  background-color: rgba(130, 125, 214, 0.7); }
+
+.checkbox {
+  display: none; }
+
+.toggle-switch::before {
+  position: relative;
+  right: 20px;
+  bottom: 10px;
+  content: "Annually";
+  color: #b3b5c6; }
+
+.toggle-switch::after {
+  position: relative;
+  right: -20px;
+  bottom: 10px;
+  content: "Monthly";
+  color: #b3b5c6; }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  width: 1000px;
+  margin: auto;
+  padding-top: 3rem; }
+
+.pricing-1,
+.pricing-3 {
+  background: #fff;
+  color: #6d708d;
+  box-shadow: 10px 10px 31px -18px rgba(158, 158, 158, 0.47); }
+
+.pricing-1 {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px; }
+
+.pricing-3 {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px; }
+
+.pricing-2 {
+  background: linear-gradient(180deg, #a3a8f0, #696fdd);
+  color: #fff;
+  border-radius: 8px;
+  margin: -1rem 0;
+  padding-top: 1rem; }
+
+.basic,
+.master {
+  font-size: 3.6rem;
+  color: #494c5f;
+  padding-top: 0; }
+
+.professional {
+  font-size: 3.6rem;
+  color: #fff;
+  padding-top: 0; }
+
+.basic::before,
+.professional::before,
+.master::before {
+  content: "$ ";
+  vertical-align: middle;
+  font-size: 1.8rem; }
+
+.pricing-1 li,
+.pricing-3 li {
+  border-bottom: 1px solid #b3b5c6; }
+
+.pricing-2 li {
+  border-bottom: 1px solid #fff; }
+
+li.price-title {
+  border-bottom: none;
+  padding-top: 2rem;
+  font-size: 1rem; }
+
+li.btn {
+  padding: 2rem 0 1.5rem 0;
+  border-bottom: none; }
+
+li a {
+  display: block;
+  width: 100%;
+  border: 1px solid #fff;
+  padding: 0.75rem 3rem;
+  border-radius: 5px;
+  cursor: pointer; }
+
+li a.btn-basic,
+li a.btn-master {
+  background: linear-gradient(45deg, #a3a8f0, #696fdd);
+  color: #fff; }
+
+li a.btn-basic:hover,
+li a.btn-master:hover {
+  background: #fff;
+  color: #696fdd;
+  border: 1px solid #696fdd; }
+
+li a.btn-professional {
+  background: #fff;
+  color: #696fdd; }
+
+li a.btn-professional:hover {
+  background: #696fdd;
+  color: #fff;
+  border: 1px solid #fff; }
+
+.attribution {
+  text-align: center;
+  font-size: 0.5rem;
+  font-weight: 400;
+  background: #f6f6fe;
+  color: #90a4ae;
+  margin: 1rem;
+  padding: 3rem 2rem 1rem 2rem; }
+
+.attribution a {
+  text-decoration: none;
+  color: #55ae95; }
+
+.attribution a:hover {
+  color: #f0134d; }
+
+footer a.footer {
+  letter-spacing: 0;
+  font-size: 0.55rem;
+  text-transform: none; }
+
+@media (max-width: 768px) {
+  body {
+    width: 375px;
+    margin: auto; }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-gap: 2.5rem;
+    width: 80%;
+    margin: auto; }
+  .heading {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 2rem 1rem 1rem 1rem;
+    color: #6d708d; }
+  .pricing-1,
+  .pricing-2,
+  .pricing-3 {
+    border-radius: 8px;
+    box-shadow: 10px 10px 31px -18px rgba(158, 158, 158, 0.47); } }
