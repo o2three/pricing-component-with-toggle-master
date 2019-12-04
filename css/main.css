@@ -62,14 +62,6 @@ h1 {
 .checkbox:checked + .switch {
   background-color: rgba(130, 125, 214, 0.7); }
 
-input[type="checkbox"] + .switch {
-  color: #ccc;
-  font-style: italic; }
-
-input[type="checkbox"]:checked + .switch {
-  color: #f00;
-  font-style: normal; }
-
 .checkbox {
   position: absolute;
   top: -9999;
