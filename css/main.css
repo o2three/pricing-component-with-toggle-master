@@ -53,7 +53,8 @@ h1 {
   top: 2px;
   left: 2px;
   transition: all 0.3s;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 2; }
 
 .checkbox:checked + .switch::after {
   left: 28px; }
@@ -61,8 +62,24 @@ h1 {
 .checkbox:checked + .switch {
   background-color: rgba(130, 125, 214, 0.7); }
 
+input[type="checkbox"] + .switch {
+  color: #ccc;
+  font-style: italic; }
+
+input[type="checkbox"]:checked + .switch {
+  color: #f00;
+  font-style: normal; }
+
 .checkbox {
-  display: none; }
+  position: absolute;
+  top: -9999;
+  left: -9999;
+  width: 55px;
+  height: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none; }
 
 .toggle-switch::before {
   position: relative;
